@@ -62,6 +62,10 @@ def predict_lstm():
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
+
+@app.route('/', methods=['GET'])
+def ok():
+    return jsonify({'thanh':'cong'}), 200
 # Chạy server
 if __name__ == '__main__':
     app.run(debug=True,host="0.0.0.0", port=8080)
