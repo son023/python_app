@@ -65,7 +65,7 @@ def predict_lstm():
 
 @app.route('/', methods=['GET'])
 def ok():
-    return jsonify({'thanh':'cong'}), 200
+    return '<h1>Xin chao, Son day</h1>'
 # Chạy server
 if __name__ == '__main__':
     app.run(debug=True,host="0.0.0.0", port=8080)
